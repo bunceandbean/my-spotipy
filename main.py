@@ -2,9 +2,10 @@
 
 import json
 import requests
+import tokens
 
 def grab_json_from_url(url: str) -> dict:
-    token = ""
+    token = tokens.BEARER_TOKEN
     headers = {
         'Authorization': f'Bearer {token}'
     }
